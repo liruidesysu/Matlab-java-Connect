@@ -1,6 +1,6 @@
 # Matlab-java-Connect
-本例子是有高成英老师指导的软件工程高级实训项目《基于深度学习的多特征融合定位系统开发》中个人负责的模板中的一部分。
-
+    本例子是有高成英老师指导的软件工程高级实训项目《基于深度学习的多特征融合定位系统开发》中个人负责的模板中的一部分。
+    运行环境：Matlab R2014a & Eclipse
 一、Matlab端内嵌java代码，通过java调用socket实现通信，下面是简单的Matlab中TCP/IP socket通信例子。
 
   Matlab作为服务端代码
@@ -92,7 +92,8 @@ function server(message, output_port, number_of_retries)
         retry = retry + 1;
 
         try
-            if ((number_of_retries > 0) && (retry > number_of_retries))
+
+if ((number_of_retries > 0) && (retry > number_of_retries))
                 fprintf(1, 'Too many retries\n');
                 break;
             end
@@ -139,10 +140,17 @@ end
 
 
  二、github中代码实现java客户端与matlab服务器之间的简单socket通信，并通过java传送的图片地址在matlab服务端显示出来。
+ 
    步骤：
+   
    1、Matlab服务端启动，监听。
+   
    2、java客户端启动，连接matlab服务器，建立一个socket通信并发送第一张图片。
+   
    3、Matlab服务端接收java客户端发送的图片或图片地址，使用窗口显示出来，并返回传送的图片的数量的信息。
+   
    4、java客户端接收到来自Matalab服务器反馈回来的信息关闭socket通信，建立下一个socket通信继续发送第二张图片。
+   
    5、重复3-4步骤
+   
    6、完成socket通信
