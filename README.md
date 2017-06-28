@@ -6,9 +6,10 @@
 
   Matlab作为服务端代码
   
-  % CLIENT connect to a server and read a message
-  %
-  % Usage - message = client(host, port, number_of_retries)
+        % CLIENT connect to a server and read a message
+  
+        % Usage - message = client(host, port, number_of_retries)
+        
 function message = client(host, port, number_of_retries)
 
     import java.net.Socket
@@ -72,9 +73,9 @@ end
 
   Matlab客户端代码
   
-%ERVER Write a message over the specified port
-% 
-% Usage - server(message, output_port, number_of_retries)
+        %ERVER Write a message over the specified port
+
+        % Usage - server(message, output_port, number_of_retries)
 function server(message, output_port, number_of_retries)
 
     import java.net.ServerSocket
@@ -94,7 +95,7 @@ function server(message, output_port, number_of_retries)
 
         try
 
-if ((number_of_retries > 0) && (retry > number_of_retries))
+    if ((number_of_retries > 0) && (retry > number_of_retries))
                 fprintf(1, 'Too many retries\n');
                 break;
             end
