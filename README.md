@@ -1,6 +1,7 @@
 # Matlab-java-Connect
     本例子是有高成英老师指导的软件工程高级实训项目《基于深度学习的多特征融合定位系统开发》中个人负责的模板中的一部分。
     运行环境：Matlab R2014a & Eclipse
+    
 一、Matlab端内嵌java代码，通过java调用socket实现通信，下面是简单的Matlab中TCP/IP socket通信例子。
 
   Matlab作为服务端代码
