@@ -1,0 +1,2 @@
+1、MatlabServer是java客户端一次性发送三张图片的服务端，包含解析图片1|图片2|图片3形式和异常处理的情况，并返回label1:label2:label3形式的数据。
+2、testServer是与java客户端应答模式，只有服务端返回一个响应时，java客户端才会发送下一张图片。
